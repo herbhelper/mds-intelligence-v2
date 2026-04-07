@@ -70,8 +70,11 @@ html, body {
   background: radial-gradient(circle, rgba(200,169,110,0.03) 0%, transparent 70%);
   pointer-events: none;
 }
+.greeting-logo {
+  height: 36px; width: auto; object-fit: contain; opacity: 0.9; margin-bottom: 28px;
+}
 .greeting-time {
-  font-family: var(--mono); font-size: 11px; color: var(--muted);
+  font-family: var(--mono); font-size: 11px; color: rgba(232,232,228,0.55);
   letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px;
 }
 .greeting-hello {
@@ -179,6 +182,7 @@ html, body {
 <div id="experience">
 
   <section class="greeting-section">
+    <img class="greeting-logo" src="https://mdsfx.co.za/wp-content/uploads/2023/09/MDS-Empowering-Others-WHITE-e1693997602861-180x109.png" alt="MDS Forex Institute">
     <div class="greeting-time" id="greeting-time"></div>
     <h1 class="greeting-hello">GOOD EVENING,<br><em>MICHAEL.</em></h1>
     <p class="greeting-sub">Your intelligence system has been monitoring MDS Forex Institute. Here's what I found.</p>
