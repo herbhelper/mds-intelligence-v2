@@ -121,14 +121,14 @@ html, body {
 .intel-body { font-size: 14px; color: var(--dim); line-height: 1.9; font-weight: 300; }
 .intel-body strong { color: var(--white); font-weight: 500; }
 
-.dossier { margin-top: 32px; border: 1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.015); }
-.dossier-row { display: grid; grid-template-columns: 140px 1fr; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 13px; }
+.dossier { margin-top: 32px; border: 1px solid rgba(255,255,255,0.18); background: rgba(255,255,255,0.03); }
+.dossier-row { display: grid; grid-template-columns: 140px 1fr; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 13px; }
 .dossier-row:last-child { border-bottom: none; }
-.dossier-key { padding: 14px 20px; font-family: var(--mono); font-size: 11px; color: rgba(232,232,228,0.85); letter-spacing: 1px; text-transform: uppercase; border-right: 1px solid rgba(255,255,255,0.04); }
+.dossier-key { padding: 14px 20px; font-family: var(--mono); font-size: 11px; color: rgba(232,232,228,0.85); letter-spacing: 1px; text-transform: uppercase; border-right: 1px solid rgba(255,255,255,0.1); }
 .dossier-val { padding: 14px 20px; color: var(--dim); }
 .dossier-val strong { color: var(--white); font-weight: 500; }
 
-.pair-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: rgba(255,255,255,0.04); }
+.pair-grid { margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: rgba(255,255,255,0.12); }
 .pair-cell { background: var(--bg); padding: 24px; transition: background 0.3s; }
 .pair-cell:hover { background: rgba(255,255,255,0.02); }
 .pair-name { font-family: var(--mono); font-size: 12px; color: var(--dim); letter-spacing: 1px; margin-bottom: 8px; }
@@ -139,18 +139,18 @@ html, body {
 .neutral { color: var(--dim); }
 
 .agent-stack { margin-top: 32px; display: flex; flex-direction: column; gap: 2px; }
-.agent { border: 1px solid rgba(255,255,255,0.05); padding: 28px; display: grid; grid-template-columns: 48px 1fr; gap: 20px; transition: all 0.4s; position: relative; overflow: hidden; }
+.agent { border: 1px solid rgba(255,255,255,0.14); padding: 28px; display: grid; grid-template-columns: 48px 1fr; gap: 20px; transition: all 0.4s; position: relative; overflow: hidden; }
 .agent::before { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 100%; background: var(--gold); opacity: 0; transition: opacity 0.4s; }
 .agent:hover::before { opacity: 1; }
 .agent:hover { background: rgba(255,255,255,0.02); }
-.agent-icon { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 11px; color: var(--gold); letter-spacing: 1px; }
+.agent-icon { width: 48px; height: 48px; border: 1px solid rgba(255,255,255,0.22); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 11px; color: var(--gold); letter-spacing: 1px; }
 .agent-name { font-family: var(--display); font-size: 22px; letter-spacing: 2px; margin-bottom: 6px; }
 .agent-desc { font-size: 13px; color: var(--dim); line-height: 1.7; font-weight: 300; }
-.agent-demo { margin-top: 16px; padding: 16px; background: rgba(255,255,255,0.02); border-left: 2px solid rgba(200,169,110,0.3); font-family: var(--mono); font-size: 12px; color: var(--dim); line-height: 1.8; }
+.agent-demo { margin-top: 16px; padding: 16px; background: rgba(255,255,255,0.03); border-left: 2px solid rgba(200,169,110,0.7); font-family: var(--mono); font-size: 12px; color: var(--dim); line-height: 1.8; }
 .agent-demo .action { color: var(--gold); }
 .agent-demo .result { color: var(--green); }
 
-.caption-demo { margin-top: 32px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); padding: 32px; }
+.caption-demo { margin-top: 32px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.18); padding: 32px; }
 .caption-meta { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; }
 .caption-text { font-size: 14px; color: var(--white); line-height: 1.8; font-weight: 300; }
 .caption-text .hashtag { color: var(--gold); }
@@ -159,11 +159,11 @@ html, body {
 .finale-mark { font-family: var(--display); font-size: clamp(80px, 16vw, 180px); letter-spacing: 8px; color: transparent; -webkit-text-stroke: 1px rgba(200,169,110,0.2); margin-bottom: 32px; user-select: none; }
 .finale h2 { font-family: var(--display); font-size: clamp(24px, 4vw, 40px); letter-spacing: 3px; color: var(--white); margin-bottom: 16px; }
 .finale p { font-size: 14px; color: var(--dim); font-weight: 300; margin-bottom: 8px; }
-.finale-cta { margin-top: 40px; font-family: var(--mono); font-size: 11px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; padding: 16px 40px; border: 1px solid rgba(200,169,110,0.3); transition: all 0.3s; display: inline-block; text-decoration: none; }
+.finale-cta { margin-top: 40px; font-family: var(--mono); font-size: 11px; color: var(--gold); letter-spacing: 3px; text-transform: uppercase; padding: 16px 40px; border: 1px solid rgba(200,169,110,0.7); transition: all 0.3s; display: inline-block; text-decoration: none; }
 .finale-cta:hover { background: var(--gold); color: var(--bg); }
 .finale-credit { margin-top: 60px; font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 2px; }
 
-.divider { max-width: 900px; margin: 0 auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(200,169,110,0.15), transparent); }
+.divider { max-width: 900px; margin: 0 auto; height: 1px; background: linear-gradient(90deg, transparent, rgba(200,169,110,0.4), transparent); }
 
 @media (max-width: 640px) {
   .dossier-row { grid-template-columns: 110px 1fr; }
